@@ -42,10 +42,12 @@ class App extends Component {
       }
 
   nextQuestion = () => {
+    //Check if the current question was last on array, if true run startOver fn.
     if(this.state.currentQuestionIndex === this.state.questions.length ||
       this.state.questionNo === this.state.questions.length) {
           this.startOver();
     } else {
+      //if the current question was not last, choose next in array
       this.setState(state => ({
         currentQuestion : this.state.questions[this.state.currentQuestionIndex+1],
         currentQuestionIndex : this.state.currentQuestionIndex+1,
