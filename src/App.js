@@ -55,7 +55,6 @@ class App extends Component {
         selectedAnswer: null,
       }))
     }
-  
   }
 
   startOver = () => {
@@ -68,8 +67,7 @@ class App extends Component {
       })
     }
 
-  render(){
-      
+  render(){  
     return (
       <div className="App">
         <header className="App-header">
@@ -89,8 +87,8 @@ class App extends Component {
                     questionNo={this.state.questionNo}/>
         </div>
        
-        <footer className="App-footer">
-        </footer>
+        <footer className="App-footer"/>
+
       </div>
     );
   }
